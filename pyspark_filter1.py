@@ -76,9 +76,9 @@ args = parser.parse_args()
 filename = args.filename
 
 
-source_path = 'hdfs://gdch01-cluster02-ns/user/p805032/' + filename
+source_path = '/' + filename
 
-dest_path = 'hdfs://gdch01-cluster02-ns/tmp/filter1_'+filename
+dest_path = '/filter1_'+filename
 
 key_set = ['101', '103', '195', '196', '198', '199', '200', '202', '203', '204', '205', '210', '295', '296', '298', '299', '304', '321', '350', '380', '395', '398', '399', '499', '527','540', '541', '542', '543','558', '564', '565', '578', '595', '596', '598', '599', '699', '700', '799', '899', '996', '998', '999']
 
