@@ -60,7 +60,21 @@ def toCSVLine(data):
 #     else:
 #         return False
 
+# from operator import itemgetter
 
+# retrosheet = sc.newAPIHadoopFile(
+#     '/path/to/retrosheet/file',
+#     'org.apache.hadoop.mapreduce.lib.input.TextInputFormat',
+#     'org.apache.hadoop.io.LongWritable',
+#     'org.apache.hadoop.io.Text',
+#     conf={'textinputformat.record.delimiter': '\nid,'}
+# )
+# (retrosheet
+#     .filter(itemgetter(1))
+#     .values()
+#     .filter(lambda x: x)
+#     .map(lambda v: (
+#         v if v.startswith('id') else 'id,{0}'.format(v)).splitlines()))
 
 
 
